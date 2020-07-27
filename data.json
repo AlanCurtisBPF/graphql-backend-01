@@ -1,40 +1,40 @@
 {
-    "customers":[
-        {
-          "id":"1",
-          "name":"Jon Doe",
-          "email":"js@gmail",
-          "age": 35
-        },
-        {
-             "id":"2",
-             "name":"Mike Doe",
-             "email":"mm@gmail",
-             "age": 32
-        },
-        {
-             "id":"3",
-             "name":"Sue Doe",
-             "email":"ss@gmail",
-             "age": 345
-        },
-        {
-            "id":"4",
-            "name":"Llyod Jumper",
-            "email":"js@gmail",
-            "age": 35
-          },
-          {
-               "id":"5",
-               "name":"dddf ff",
-               "email":"mm@gmail",
-               "age": 32
-          },
-          {
-               "id":"6",
-               "name":"zzzz fffff",
-               "email":"ss@gmail",
-               "age": 345
-          }
-    ]
+  "customers": [
+    {
+      "id": "1",
+      "name": "Jon Doe",
+      "email": "js@gmail",
+      "age": 35
+    },
+    {
+      "id": "2",
+      "name": "Mike Doe",
+      "email": "mm@gmail",
+      "age": 32
+    },
+    {
+      "id": "3",
+      "name": "Sue Doe",
+      "email": "ss@gmail",
+      "age": 345
+    },
+    {
+      "id": "4",
+      "name": "Llyod Jumper",
+      "email": "js@gmail",
+      "age": 35
+    },
+    {
+      "id": "5",
+      "name": "dddf ff",
+      "email": "mm@gmail",
+      "age": 32
+    },
+    {
+      "id": "6",
+      "name": "zzzz fffff",
+      "email": "ss@gmail",
+      "age": 345
+    }
+  ]
 }
