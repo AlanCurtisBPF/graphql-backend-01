@@ -32,7 +32,15 @@ const RootQuery = new GraphQLObjectType({
       resolve(parentValue, args) {
         return axios
           .get("http://localhost:5000/customers/" + args.id)
-          .then((res) => res.data);
+          .then((res) => {
+            console.log("came in: ", args);
+            console.log("return: ", res.data);
+            return res.data;
+          })
+          .catch((error) => {
+            console.log("error:", error.message);
+            return error;
+          });
       },
     },
     customers: {
@@ -40,7 +48,15 @@ const RootQuery = new GraphQLObjectType({
       resolve(parentValue, args) {
         return axios
           .get("http://localhost:5000/customers/")
-          .then((res) => res.data);
+          .then((res) => {
+            console.log("came in: ", args);
+            console.log("return: ", res.data);
+            return res.data;
+          })
+          .catch((error) => {
+            console.log("error:", error.message);
+            return error;
+          });
       },
     },
   },
@@ -67,7 +83,7 @@ const mutation = new GraphQLObjectType({
           .then((res) => res.data);
       },
     },
-    deletCustomer: {
+    deleteCustomer: {
       type: CustomerType,
       args: {
         id: { type: new GraphQLNonNull(GraphQLString) },
